@@ -11,7 +11,7 @@ void Swap(int &a, int &b){
 }
 
 void string_copy(char* d, char* s){
-    for (char *pd = d, *ps = s; *pd++ = *ps++;);
+    for (char* pd = d, *ps = s; *pd++ = *ps++;);
 }
 
 int len(const char* s){
