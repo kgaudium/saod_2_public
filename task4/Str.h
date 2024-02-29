@@ -52,7 +52,9 @@ public:
             new_text[text_len + i]=other[i];
         }
 
-        return new_text;
+        Str result {new_text};
+        delete[] new_text;
+        return result;
     }
 
     Str& operator +=(const char* other){
@@ -68,9 +70,8 @@ public:
         for (int i = 0; i<sz_len; i++){
             new_text[text_len + i]=other[i];
         }
-        delete[] _text;                                     // нужно ли?
-        this->_text = new char[text_len + sz_len + 1]{};
-        std::strcpy(this->_text, new_text);
+        delete[] _text;
+        _text = new_text;
 
         return *this;
     }
