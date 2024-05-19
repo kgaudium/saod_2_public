@@ -19,6 +19,11 @@ add_subdirectory(task5)
 
 add_subdirectory(task6a)
 
+# TODO
+#add_subdirectory(task6)
+
+add_subdirectory(task7)
+
 add_subdirectory(linked_list)
 
 add_subdirectory(inheritance)
